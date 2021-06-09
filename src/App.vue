@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <Titulo texto="Mi banco en Vue CLI" />
+    <Cuenta />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import Titulo from './components/Titulo';
+import Cuenta from './components/Cuenta';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Titulo,
+    Cuenta
   }
 }
 </script>
@@ -19,7 +25,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
   margin-top: 60px;
 }
